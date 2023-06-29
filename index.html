@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- First we have to create registration form -->
+
+   <div class="container">
+    <div class="form-box">
+        <form action="" name="Formfill" onsubmit=" return validation()">
+            <h2>Register</h2>
+            <p id="result"></p>
+            <div class="input-box">
+                <input type="text" name="Username" placeholder="Username">
+            </div>
+            <div class="input-box">
+                <input type="email" name="Email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="password" name="Password" placeholder="Password">
+            </div>
+            <div class="input-box">
+                <input type="password" name="CPassword" placeholder="Confirm Password">
+            </div>
+            <div class="button">
+                <input type="submit" class="btn" onclick="validation()" value="Register">
+            </div>
+            <div class="group">
+                <span><a href="#" onclick="forget()">Forget Password</a></span>
+                <span><a href="./login.html">Login</a></span>
+            </div>
+        </form>
+    </div>
+     <!-- we have to create popup -->
+
+     <div id="popup" class="popup">
+    
+        <h2>Thank You !!</h2>
+        <p>You Registered successfully </p>
+        <a href="./login.html"><button onclick="CloseSlide()">OK</button></a>
+        
+
+    </div>
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
+
+
+
+</body>
+</html>
